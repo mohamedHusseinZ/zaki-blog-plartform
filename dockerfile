@@ -14,10 +14,10 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 # Copy the application code to the working directory
-COPY . /app
+COPY . /
 
 # Expose port 4433
 EXPOSE 4433
 
-# Run the application
+# Run the application using app.py
 CMD ["python", "app.py"]
